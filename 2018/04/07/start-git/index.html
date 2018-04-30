@@ -79,19 +79,19 @@
 
 
 
-<meta name="description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 Check git info1yum info git You’ll see the git in yum rep,it would be very old version">
+<meta name="description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
 <meta name="keywords" content="java javascript docker python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="start git server">
 <meta property="og:url" content="http://foreverpoetry.tk/2018/04/07/start-git/index.html">
 <meta property="og:site_name" content="This is a blog">
-<meta property="og:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 Check git info1yum info git You’ll see the git in yum rep,it would be very old version">
+<meta property="og:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://foreverpoetry.tk/2018/04/07/start-git/git_info.jpg">
-<meta property="og:updated_time" content="2018-04-12T15:00:25.076Z">
+<meta property="og:updated_time" content="2018-04-30T14:04:43.929Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="start git server">
-<meta name="twitter:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 Check git info1yum info git You’ll see the git in yum rep,it would be very old version">
+<meta name="twitter:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
 <meta name="twitter:image" content="http://foreverpoetry.tk/2018/04/07/start-git/git_info.jpg">
 
 
@@ -332,11 +332,17 @@
       
 
       
-        <h2 id="架设git服务器"><a href="#架设git服务器" class="headerlink" title="架设git服务器"></a>架设git服务器</h2><p>在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。</p>
-<h3 id="一种简便的方法"><a href="#一种简便的方法" class="headerlink" title="一种简便的方法"></a>一种简便的方法</h3><p>centos<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></p>
+        <h1 id="架设git服务器"><a href="#架设git服务器" class="headerlink" title="架设git服务器"></a>架设git服务器</h1><p>在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。</p>
+<h2 id="一种简便的方法"><a href="#一种简便的方法" class="headerlink" title="一种简便的方法"></a>一种简便的方法</h2><p>centos<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></p>
 <p>这样可以利用yum迅速的安装好</p>
-<h3 id="Check-git-info"><a href="#Check-git-info" class="headerlink" title="Check git info"></a>Check git info</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum info git</span><br></pre></td></tr></table></figure>
-<p><img src="/2018/04/07/start-git/git_info.jpg" alt="yum info git"><br>You’ll see the git in yum rep,it would be very old version,like 1.8.3.1 . Git has been release to 2.17.0 at this time.If we want use the lastest,we have to compile it ourselves.</p>
+<h3 id="检查git版本"><a href="#检查git版本" class="headerlink" title="检查git版本"></a>检查git版本</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum info git</span><br></pre></td></tr></table></figure>
+<p><img src="/2018/04/07/start-git/git_info.jpg" alt="yum info git"><br>但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最新的版本了。</p>
+<h2 id="编译安装"><a href="#编译安装" class="headerlink" title="编译安装"></a>编译安装</h2><h3 id="下载源码"><a href="#下载源码" class="headerlink" title="下载源码"></a>下载源码</h3><p>进到你的目录下，然后下载源码<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home/git</span><br><span class="line">wget https://www.kernel.org/pub/software/scm/git/git-2.17.0.tar.gz</span><br></pre></td></tr></table></figure></p>
+<h3 id="安装依赖包"><a href="#安装依赖包" class="headerlink" title="安装依赖包"></a>安装依赖包</h3><p>centOS<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install curl-devel expat-devel gettext-devel openssl-devel zlib-devel</span><br></pre></td></tr></table></figure></p>
+<p>ubuntu<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install libcurl4-gnutls-dev libexpat1-dev gettext libz-dev libssl-dev</span><br></pre></td></tr></table></figure></p>
+<h3 id="编译安装-1"><a href="#编译安装-1" class="headerlink" title="编译安装"></a>编译安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">tar -zxf git-2.17.0.tar.gz</span><br><span class="line"><span class="built_in">cd</span> git-1.9.5</span><br><span class="line">./configure --prefix=/your/location</span><br><span class="line">make</span><br><span class="line">sudo make install</span><br></pre></td></tr></table></figure>
+<h3 id="设置环境变量"><a href="#设置环境变量" class="headerlink" title="设置环境变量"></a>设置环境变量</h3><p>编译安装完成后，就应该设置环境变量了。<br>在主目录的.bash_profile或者/etc/profile文件中设置环境变量<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">"/usr/local/git/bin:<span class="variable">$PATH</span>"</span></span><br></pre></td></tr></table></figure></p>
+<p>然后source /etc/profile使文件生效</p>
 
       
     </div>
@@ -519,7 +525,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#架设git服务器"><span class="nav-number">1.</span> <span class="nav-text">架设git服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#一种简便的方法"><span class="nav-number">1.1.</span> <span class="nav-text">一种简便的方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Check-git-info"><span class="nav-number">1.2.</span> <span class="nav-text">Check git info</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#架设git服务器"><span class="nav-number">1.</span> <span class="nav-text">架设git服务器</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#一种简便的方法"><span class="nav-number">1.1.</span> <span class="nav-text">一种简便的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#检查git版本"><span class="nav-number">1.1.1.</span> <span class="nav-text">检查git版本</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#编译安装"><span class="nav-number">1.2.</span> <span class="nav-text">编译安装</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#下载源码"><span class="nav-number">1.2.1.</span> <span class="nav-text">下载源码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装依赖包"><span class="nav-number">1.2.2.</span> <span class="nav-text">安装依赖包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#编译安装-1"><span class="nav-number">1.2.3.</span> <span class="nav-text">编译安装</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置环境变量"><span class="nav-number">1.2.4.</span> <span class="nav-text">设置环境变量</span></a></li></ol></li></ol></li></ol></div>
             
 
           </div>
