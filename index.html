@@ -210,12 +210,32 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -252,6 +272,176 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://foreverpoetry.tk/2018/04/30/about-tags-categories-archives/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="foreverpoetry">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/zk.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="This is a blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/04/30/about-tags-categories-archives/" itemprop="url">hexo设置 关于 标签 分类 归档</a></h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-30T23:01:49+08:00">
+                2018-04-30
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2018/04/30/about-tags-categories-archives/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count"
+                        data-disqus-identifier="2018/04/30/about-tags-categories-archives/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>在搭建起hexo后，我使用<a href="">next</a>做为主题，以下是关于怎么添加关于、标签、分类、归档的方法</p>
+<h3 id="1：添加-关于页面"><a href="#1：添加-关于页面" class="headerlink" title="1：添加 关于页面"></a>1：添加 关于页面</h3><p>使用：<code>hexo new page &quot;about&quot;</code> 新建一个 关于我 页面,在创建的同时也会创建一个about的文件夹，里面的index.md文件就是显示的页面，在里面添上你的介绍。如果使用了评论插件，可以设置这个页面不评论<code>comments: false</code>。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: About Me</span><br><span class="line">date: 2018-04-30 22:33:41</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line">This blog is just for record .</span><br><span class="line">That is my [repository](https://github.com/foreverpoetry/).</span><br><span class="line">Have Fun!</span><br></pre></td></tr></table></figure></p>
+<p>然后在next主题的 <code>_config.yml</code> 文件中的 <code>menu</code> 中进行匹配</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                 //主页</span><br><span class="line">  categories: /categories //分类        </span><br><span class="line">  archives: /archives     //归档</span><br><span class="line">  tags: /tags             //标签                 </span><br><span class="line">  about: /about           //关于              （打开注释）</span><br></pre></td></tr></table></figure>
+<h3 id="2：添加-标签页面"><a href="#2：添加-标签页面" class="headerlink" title="2：添加 标签页面"></a>2：添加 标签页面</h3><p>同样使用： <code>hexo new page tags</code> 新建一个 标签 页面,重点是<code>type: &quot;tags&quot;</code>,最好也不要评论。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: tags</span><br><span class="line">date: 2018-04-30 22:48:08</span><br><span class="line">type: &quot;tags&quot;</span><br><span class="line">layout: &quot;tags&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure></p>
+<p>然后再在主题的 <code>_config.yml</code> 文件中的 <code>menu</code> 中进行匹配</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                 //主页</span><br><span class="line">  categories: /categories //分类        </span><br><span class="line">  archives: /archives     //归档</span><br><span class="line">  tags: /tags             //标签          （打开注释）        </span><br><span class="line">  about: /about           //关于</span><br></pre></td></tr></table></figure>
+<p>然后在新建<code>hexo new &quot;new md&quot;</code>的文章中加入tags标签：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">title: 新的文章</span><br><span class="line">tags:</span><br><span class="line">  - tags 1                   </span><br><span class="line">  - tags 2               </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>tags 也可以写成<code>tags: [tags 1,tags 2]</code></p>
+<h3 id="3：添加-分类页面"><a href="#3：添加-分类页面" class="headerlink" title="3：添加 分类页面"></a>3：添加 分类页面</h3><p>添加分类页面和tags页面比较类似。使用： <code>hexo new page &quot;categories&quot;</code> 新建一个 分类 页面。<br>主题的 <code>_config.yml</code> 文件中的 <code>menu</code> 中进行匹配</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                 //主页</span><br><span class="line">  categories: /categories //分类        （打开注释）</span><br><span class="line">  archives: /archives     //归档</span><br><span class="line">  tags: /tags             //标签                  </span><br><span class="line">  about: /about           //关于</span><br></pre></td></tr></table></figure>
+<p>新建的文章包含 <code>分类</code> ：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">title: 分类测试</span><br><span class="line">categories:</span><br><span class="line">- hexo                       </span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="4：添加-归档页面"><a href="#4：添加-归档页面" class="headerlink" title="4：添加 归档页面"></a>4：添加 归档页面</h3><p>主题的 <code>_config.yml</code> 文件中的 <code>menu</code> 中进行匹配</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                 //主页</span><br><span class="line">  categories: /categories //分类        </span><br><span class="line">  archives: /archives     //归档             （打开这个注释）</span><br><span class="line">  tags: /tags             //标签                  </span><br><span class="line">  about: /about           //关于</span><br></pre></td></tr></table></figure>
+<h3 id="5：添加-自定义页面"><a href="#5：添加-自定义页面" class="headerlink" title="5：添加 自定义页面"></a>5：添加 自定义页面</h3><p>以上是添加特定页面的方法，其实都是使用<code>hexo new page</code>创建一个新的页面，然后给特定的页面以特殊功能。添加自定义页面也就是： <code>hexo new page &quot;newpage&quot;</code> 新建一个 自定义 页面。<br>在主题的 <code>_config.yml</code> 文件中的 <code>menu</code> 中添加一行，标识增加一个自定义页面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: /                 //主页</span><br><span class="line">  categories: /categories //分类        </span><br><span class="line">  archives: /archives     //归档   </span><br><span class="line">  tags: /tags             //标签                  </span><br><span class="line">  about: /about           //关于</span><br><span class="line">  newpage: /newpage       //自定义             （添加这个）</span><br></pre></td></tr></table></figure>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://foreverpoetry.tk/2018/04/07/start-git/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -271,7 +461,7 @@
         
           <h2 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/04/07/start-git/" itemprop="url">start git server</a></h2>
+                <a class="post-title-link" href="/2018/04/07/start-git/" itemprop="url">在服务器上部署git服务端</a></h2>
         
 
         <div class="post-meta">
@@ -293,6 +483,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -435,6 +647,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/hello-world/" itemprop="url" rel="index">
+                    <span itemprop="name">hello world</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -569,14 +803,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -632,7 +884,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>

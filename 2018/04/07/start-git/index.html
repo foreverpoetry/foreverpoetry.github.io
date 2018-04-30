@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="git server,ubuntu,centos," />
 
 
 
@@ -80,17 +80,17 @@
 
 
 <meta name="description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
-<meta name="keywords" content="java javascript docker python">
+<meta name="keywords" content="git server,ubuntu,centos">
 <meta property="og:type" content="article">
-<meta property="og:title" content="start git server">
+<meta property="og:title" content="在服务器上部署git服务端">
 <meta property="og:url" content="http://foreverpoetry.tk/2018/04/07/start-git/index.html">
 <meta property="og:site_name" content="This is a blog">
 <meta property="og:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://foreverpoetry.tk/2018/04/07/start-git/git_info.jpg">
-<meta property="og:updated_time" content="2018-04-30T14:04:43.929Z">
+<meta property="og:updated_time" content="2018-04-30T14:58:26.719Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="start git server">
+<meta name="twitter:title" content="在服务器上部署git服务端">
 <meta name="twitter:description" content="架设git服务器在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。 一种简便的方法centos1yum install git 这样可以利用yum迅速的安装好 检查git版本1yum info git 但是你会发现，yum里的git的版本只有1.8.3.1。而git官网的版本已经到2.17.0如果你想用到最新版，那你只能编译官网最">
 <meta name="twitter:image" content="http://foreverpoetry.tk/2018/04/07/start-git/git_info.jpg">
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>start git server | This is a blog</title>
+  <title>在服务器上部署git服务端 | This is a blog</title>
   
 
 
@@ -212,12 +212,32 @@
         </li>
       
         
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
             
             归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
           </a>
         </li>
       
@@ -271,7 +291,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">start git server</h2>
+          <h2 class="post-title" itemprop="name headline">在服务器上部署git服务端</h2>
         
 
         <div class="post-meta">
@@ -293,6 +313,28 @@
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/git/" itemprop="url" rel="index">
+                    <span itemprop="name">git</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -358,6 +400,16 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/git-server/" rel="tag"># git server</a>
+          
+            <a href="/tags/ubuntu/" rel="tag"># ubuntu</a>
+          
+            <a href="/tags/centos/" rel="tag"># centos</a>
+          
+        </div>
+      
 
       
       
@@ -376,6 +428,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/04/30/about-tags-categories-archives/" rel="prev" title="hexo设置 关于 标签 分类 归档">
+                hexo设置 关于 标签 分类 归档 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -466,14 +522,32 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">3</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
             
 
             
+              
+              
+              <div class="site-state-item site-state-categories">
+                
+                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-name">分类</span>
+                
+              </div>
+            
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
             
 
           </nav>
@@ -545,7 +619,7 @@
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; 2017 &mdash; <span itemprop="copyrightYear">2018</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -697,7 +771,7 @@
         var disqus_config = function () {
           this.page.url = 'http://foreverpoetry.tk/2018/04/07/start-git/';
           this.page.identifier = '2018/04/07/start-git/';
-          this.page.title = 'start git server';
+          this.page.title = '在服务器上部署git服务端';
         };
         var d = document, s = d.createElement('script');
         s.src = 'https://foreverpoetry.disqus.com/embed.js';
