@@ -79,13 +79,17 @@
 
 
 
+<meta name="description" content="Record the record.">
+<meta name="keywords" content="java javascript docker python">
 <meta property="og:type" content="website">
 <meta property="og:title" content="This is a blog">
 <meta property="og:url" content="http://foreverpoetry.tk/index.html">
 <meta property="og:site_name" content="This is a blog">
+<meta property="og:description" content="Record the record.">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="This is a blog">
+<meta name="twitter:description" content="Record the record.">
 
 
 
@@ -253,7 +257,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="foreverpoetry">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/zk.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -330,10 +334,11 @@
       
         
           
-            <h2 id="Start-Git-Server"><a href="#Start-Git-Server" class="headerlink" title="Start Git Server"></a>Start Git Server</h2><h3 id="Just-start"><a href="#Just-start" class="headerlink" title="Just start"></a>Just start</h3><p>centos<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></p>
-<p>In this way, git can’t be the last new one.So,let’s make it.</p>
+            <h2 id="架设git服务器"><a href="#架设git服务器" class="headerlink" title="架设git服务器"></a>架设git服务器</h2><p>在平常的工作中经常会需要git来管理代码，当人数不多时就可以自己搭一个git服务器，用来管理代码（centos为例）。</p>
+<h3 id="一种简便的方法"><a href="#一种简便的方法" class="headerlink" title="一种简便的方法"></a>一种简便的方法</h3><p>centos<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum install git</span><br></pre></td></tr></table></figure></p>
+<p>这样可以利用yum迅速的安装好</p>
 <h3 id="Check-git-info"><a href="#Check-git-info" class="headerlink" title="Check git info"></a>Check git info</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">yum info git</span><br></pre></td></tr></table></figure>
-<p>You’ll see the git in yum rep,it would be very old version,like 1.8.3.1 . Git has been release to 2.17.0 at this time.If we want use the lastest,we have to compile it ourselves.</p>
+<p><img src="/2018/04/07/start-git/git_info.jpg" alt="yum info git"><br>You’ll see the git in yum rep,it would be very old version,like 1.8.3.1 . Git has been release to 2.17.0 at this time.If we want use the lastest,we have to compile it ourselves.</p>
 
           
         
@@ -387,7 +392,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="foreverpoetry">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/zk.gif">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -543,6 +548,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/zk.gif"
+                alt="foreverpoetry" />
+            
               <p class="site-author-name" itemprop="name">foreverpoetry</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -562,6 +571,15 @@
 
             
 
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                
+                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-name">标签</span>
+                
+              </div>
             
 
           </nav>
